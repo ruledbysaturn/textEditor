@@ -23,15 +23,20 @@ module.exports = () => {
         filename: 'Webpack Plugin',
       }),
       new WebpackPwaManifest({
+        fingerprints: false,
+        inject: true,
         name: 'J.A.T.E',
         short_name: 'JATE',
         description: 'Just Another Text Editor',
         background_color: '#ffffff',
         theme_color: '#31a9e1',
+        start_url: '/',
+        publicPath: '/',
         icons: [
           {
             src: path.resolve('src/images/logo.png'),
             sizes: [72, 96, 128, 144, 192, 384, 512],
+            destination: path.join('assets', 'icons'),
           },
         ],
       }),
@@ -55,6 +60,7 @@ module.exports = () => {
             loader: 'babel-loader',
             options: {
               presets: ['@babel/preset-env'],
+              plugins: ['@babel/plugin-proposal-object-rest-spread', '@babel/transform-runtime'],
             },
           },
         },
