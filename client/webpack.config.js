@@ -10,7 +10,7 @@ module.exports = () => {
   return {
     mode: 'development',
     entry: {
-      main: './src/js/index.js',
+      main: './src/js/index.js',  
       install: './src/js/install.js'
     },
     output: {
@@ -20,7 +20,7 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         template: './index.html',
-        filename: 'index.html',
+        filename: 'Webpack Plugin',
       }),
       new WebpackPwaManifest({
         name: 'J.A.T.E',
