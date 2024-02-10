@@ -14,4 +14,21 @@ To run locally, user can clone repo, then install necesssary packages by enterin
 Here is a link to the [Deployed Application]().
 
 
+Showing manifest 
 
+![1](./assets/images/2.png)
+
+
+Showing service worker
+
+![2](./assets/images/3.png)
+
+Showing IndexDB
+
+![3](./assets/images/1.png)
+
+
+
+# Credit
+
+Link to [Starter Code](https://github.com/coding-boot-camp/cautious-meme).
