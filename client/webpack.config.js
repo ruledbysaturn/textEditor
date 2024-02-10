@@ -20,7 +20,7 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         template: './index.html',
-        filename: 'Webpack Plugin',
+        filename: 'index.html',
       }),
       new WebpackPwaManifest({
         fingerprints: false,
